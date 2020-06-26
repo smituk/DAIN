@@ -11,6 +11,7 @@ from AverageMeter import  *
 import shutil
 import datetime
 torch.backends.cudnn.benchmark = True
+with torch.no_grad():
 
 model = networks.__dict__[args.netName](
                                     channel = args.channels,
